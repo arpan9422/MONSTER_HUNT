@@ -12,23 +12,40 @@
 
 <body>
     <!-- <nav>
-        
+        div
     </nav> -->
-    <div class="main">
-        
+    <div>
+    <div id="gameOver" class="text-9xl w-screen h-screen text-center text-white flex justify-center items-center hidden">
+        <p>GAME OVER</p>
+        <div class="flex absolute top-[50vh] right-[45vw] justify-center items-center text-xl m-4 gap-8 ">
+            <h1 class="text-black bg-slate-300 p-4 rounded-md text-xl font-extralight points">YOUR SCORE</h1><p class="text-black bg-slate-300 p-4 rounded-md text-xl font-extralight points" id="pointsFinal">0</p>
+        </div>
+    </div>
+    <div class="main " id="main">
+        <div id="" class="bg-black p-4 rounded-md absolute w-24 right-7 flex justify-start  items-center flex-col gap-3 h-96">
+           <img class="block lifes" src="./img/heart.png" alt="">
+           <img class="block lifes" src="./img/heart.png" alt="">
+           <img class="block lifes" src="./img/heart.png" alt="">
+           <img class="block lifes" src="./img/heart.png" alt="">
+           <img class="block lifes" src="./img/heart.png" alt="">
+        </div>
         <div class="sky">
-            <div class="relative">
+
+            <button id="go" class="go absolute bg-slate-200 text-black text-6xl p-3 top-[40%] rounded-lg  px-10 left-[38%]  shadow-md hover:scale-110 transition-all">Start</button>
+            <div id="icons" class="relative hidden">
                 <div id="monster" class="absolute monster" >
                     <img id="monsterImg" class="h-20 block" src="./img/monster.png" alt="">
                 </div>
+                <div id="angel" class="absolute angel" >
+                    <img id="angelImg" class="h-20 block" src="./img/angel.png" alt="">
+                </div>
             </div>
-            
-            
+        </div>
+        <div class="flex absolute top-0 right-36 justify-center items-center text-xl m-4 gap-8 ">
+            <h1 class="text-black bg-slate-300 p-4 rounded-md text-xl font-extralight points">POINTS</h1><p id="points" class="text-black bg-slate-300 p-4 rounded-md text-xl font-extralight points" >0</p>
         </div>
     </div>
-    <div class="flex justify-center items-center text-xl m-4 gap-1">
-        <h1 class="text-white">Your Points are :-</h1><p class="text-white" id="points"></p>
-    </div>
+    
 </body>
 
 <script src="game.js"></script>

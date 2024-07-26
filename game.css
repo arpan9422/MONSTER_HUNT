@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Poxast-R9Jjl';
+    src: url('/fonts/Poxast-R9Jjl.ttf');
+    }
+@font-face {
+    font-family: 'ARCADE';
+    src: url('/fonts/ARCADE.ttf');
+    }
 *{
     padding: 0;
     margin: 0;
@@ -7,6 +15,7 @@ html{
 }
 body{
     background-color: rgb(42, 35, 35);
+    display: block;
     
 }
 
@@ -34,3 +43,10 @@ nav{
 
 }
 
+.go{
+    font-family: 'Poxast-R9Jjl';
+}
+
+.points{
+    font-family: 'Poxast-R9Jjl';
+}
